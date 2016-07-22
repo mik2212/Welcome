@@ -62,7 +62,7 @@ public class PlayerManager {
         } else player.kick(Message.KICK_TIMEOUT.getText(), false);
     }
 
-    private static boolean isPlayerRegistered(Player player) {
+    public static boolean isPlayerRegistered(Player player) {
         return PasswordManager.hasPassword(player);
     }
 
